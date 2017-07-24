@@ -4,7 +4,7 @@ public class Mech extends Thread
 {
     GUI gui;
     
-    String filename = "<path to dictionary>";
+    String filename = "";
     boolean running = true;
     char[] goal;
     
@@ -14,6 +14,8 @@ public class Mech extends Thread
     }
     
     public void run(){
+        if(!setFilename()){return;}
+        
         print("---start---");
         String line;
         try(BufferedReader br = new BufferedReader(new FileReader(filename))){
@@ -39,7 +41,19 @@ public class Mech extends Thread
         }
     }
     
+    private boolean setFilename(){
+        boolean success = false;
+        try(BufferedReader br = new BufferedReader(new FileReader("./DictionaryLocation.txt"))){
+            filename = br.readLine();
+            success = true;
+        }catch(IOException e){
+            print("\n\n Failed to read the location of the Dictionary file.\n");
+            print("Make sure you have a file called \n \"DictionaryLocation.txt\" in the directory of this File. \n That File must contain the absolute path of your \n dictionary file. Make sure to include the .txt ending \n and to escape every \"\\\" by putting a  \"\\\" in front of it.");
+        }
+        return success;
+    }
+    
     private void print(String line){
-        gui.print(line);
+        gui.print(" "+line);
     }
 }
