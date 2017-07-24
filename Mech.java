@@ -4,7 +4,7 @@ public class Mech extends Thread
 {
     GUI gui;
     
-    String filename = "C:\\Users\\Julian\\programming\\Dictionary\\English\\12Dict\\American\\2of12.txt";
+    String filename = "<path to dictionary>";
     boolean running = true;
     char[] goal;
     
