@@ -179,51 +179,6 @@ public class GUI
         main.add(output);
         
         f.add(main);
-        
-        
-        /*
-        JPanel controls = new JPanel(new GridLayout(2,1,5,5));
-        main.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
-        
-        JPanel top = new JPanel();
-        top.setLayout(new BoxLayout(top, BoxLayout.X_AXIS));
-        
-        top.add(new JLabel("Buchstaben: "));
-        jtf = new JTextField("5", 3);
-        jtf.addActionListener(new ActionListener(){public void actionPerformed(ActionEvent e){adjustWordlength();}});
-        top.add(jtf);
-        top.add(Box.createRigidArea(new Dimension(5,5)));
-        JButton calc = new JButton("Ok");
-        calc.addActionListener(new ActionListener(){public void actionPerformed(ActionEvent e){adjustWordlength();}});
-        top.add(calc);
-        
-        
-        JPanel bottom = new JPanel();
-        bottom.setLayout(new BoxLayout(bottom, BoxLayout.X_AXIS));
-        
-        boxes = new JPanel(new GridLayout(1,0,2,2));
-        adjustWordlength();
-        bottom.add(boxes);
-        
-        JPanel confirmField = new JPanel();
-        JButton start = new JButton("Start");
-        start.addActionListener(new ActionListener(){public void actionPerformed(ActionEvent e){start();}});
-        confirmField.add(start);
-        bottom.add(confirmField);
-        
-        
-        controls.add(top);
-        controls.add(bottom);
-        main.add(controls);
-        main.add(output);
-        f.add(main, BorderLayout.CENTER);
-        f.add(new JLabel(""), BorderLayout.NORTH);
-        f.add(new JLabel(""), BorderLayout.EAST);
-        f.add(new JLabel(""), BorderLayout.SOUTH);
-        f.add(new JLabel(""), BorderLayout.WEST);
-        */
-        
-        
         f.pack();
         f.setLocationRelativeTo(null);
         f.setVisible(true);
