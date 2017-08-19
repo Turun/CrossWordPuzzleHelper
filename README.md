@@ -8,7 +8,7 @@ When you select the "fixed length" checkbox, simply type in the letters you alre
 
 If you deselect the "fixed length" checkbox, two other checkboxes and textinputs will appear. In these two lines you can specify the beginning and the ending of the word. Make sure to replace every space with an underscore. Tick the checkbox if the program should only output words that fulfill those requirements.
 
-**The location of the dictionary has to be specified in a file called "DictionaryLocation.txt". In it you have to put the absolute path of the dictionary file.** A relative path works too, but you probably know more about the restrictions there than I do.
+**The location of the dictionary has to be specified in a file called "DictionaryLocation.txt"**. In it you have to put the absolute path of the dictionary file. A relative path works too, but you probably know more about the restrictions there than I do.
 
 Where to find wordlists:
 
