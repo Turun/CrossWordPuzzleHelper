@@ -1,0 +1,11 @@
+antilope
+bear
+chameleon
+dolphin
+elephant
+fruit bat
+giraffe
+.
+.
+.
+zoo
